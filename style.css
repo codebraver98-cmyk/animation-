@@ -1,0 +1,99 @@
+#sky{
+    background-color: rgb(92, 209, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1;
+}
+#bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: rgb(255, 184, 121);
+    position: absolute;
+    top: 250px;
+    font-size: 70px;
+}
+#racer1{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    width: 200px;
+    height: 140px;
+    z-index: 2;
+    animation-name: racer1;
+    animation-duration: 10s;
+}
+#racer2{
+    position: absolute;
+    top: 350px;
+    left: -30px;
+    width: 300px;
+    height: 150px;
+    z-index: 2;
+    animation-name: racer2;
+    animation-duration: 9s;
+}
+@keyframes racer1{
+    from{
+        left: 30;
+    }
+    to{
+        left: 1000px;
+    }
+}
+@keyframes racer2{
+    from{
+        left: -30;
+    }
+    to{
+        left: 1000px;
+    }
+}
+#cloud{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 300px;
+    height: 150px;
+    z-index: 1;
+    animation-name: cloud1;
+    animation-duration: 10s;
+}
+#cloud2{
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    width: 300px;
+    height: 150px;
+    z-index: 1;
+    animation-name: cloud;
+    animation-duration: 10s;
+}
+@keyframes cloud1{
+    from{
+        left: 100px;
+    }
+    to{
+        left: 600px;
+    }
+}
+@keyframes cloud{
+    from{
+        left: 500px;
+    }
+    to{
+        left: 1000px;
+    }
+}
+#finale{
+    position: absolute;
+    top: 360px;
+    left: 1010px;
+    width: 200px;
+    height: 50px;
+    transform: rotate(90deg);
+}
